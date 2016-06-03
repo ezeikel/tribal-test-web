@@ -1,6 +1,10 @@
 body {
   font-size: 1em;
-  background: blue;
+  background: tomato;
   color: white; }
   body p {
     font-size: 3em; }
+
+h1 {
+  font-size: 3em;
+  font-family: Arial; }
