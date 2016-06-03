@@ -38,14 +38,13 @@ gulp.task('copy', function() {
 
   // Copy html
   gulp.src(paths.html, {cwd: bases.app})
-    .pipe(gulp.dest(bases.dist))
-    browserSync.reload();
-});
+    .pipe(gulp.dest(bases.dist));
 
-gulp.task('styles', function() {
-  return gulp.src(bases.app + 'styles/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest(bases.app + 'styles'));
+  // Copy images
+  gulp.src(paths.images, {cwd: bases.app})
+    .pipe(gulp.dest(bases.dist + 'images'));
+
+    browserSync.reload();
 });
 
 gulp.task('css', function() {
@@ -53,7 +52,7 @@ gulp.task('css', function() {
     autoprefixer({browsers: ['last 1 version']}),
     cssnano(),
   ];
-  return gulp.src(bases.app + 'styles/main.scss')
+  return gulp.src(bases.app + 'styles/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulp.dest(bases.dist + 'styles'))
@@ -78,8 +77,9 @@ gulp.task('serve', ['build'], function() {
   });
 
   gulp.watch(bases.app + '*.html', ['build']);
+  gulp.watch(bases.app + 'images/*.png', ['build']);
   gulp.watch(bases.app + 'scripts/*.js', ['scripts']);
-  gulp.watch(bases.app + 'styles/*.scss', ['css']);
+  gulp.watch(bases.app + 'styles/**/*.scss', ['css']);
 });
 
 gulp.task('default', ['build', 'serve']);

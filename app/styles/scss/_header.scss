@@ -1,0 +1,12 @@
+.page-header {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: $black;
+  border-bottom: 3px solid $accent-color;
+  height: 100px;
+  img {
+    height: 50%;
+  }
+}
