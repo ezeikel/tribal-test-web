@@ -67,7 +67,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(bases.dist + 'scripts'));
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', ['build'], function() {
   browserSync.init({
     server: {
       baseDir: 'dist'
