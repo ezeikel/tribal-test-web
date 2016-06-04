@@ -1,0 +1,35 @@
+.page-wrap.product {
+  .product-container {
+    padding: 50px;
+    height: auto;
+    background-image:
+      linear-gradient(
+      to top,
+      $bg-color, $gradient
+      );
+      .product-wrap {
+        &:after {
+          display: block;
+          content: "";
+          clear: both;
+        }
+      }
+    .product-image, .product-description {
+      width: 50%;
+      height: 640px;
+    }
+    .product-image {
+      background-color: $grey;
+      float: left;
+    }
+    .product-description {
+      background-color: $white;
+      float: left;
+    }
+    .product-bar {
+      margin-top: 50px;
+      background-color: $white;
+      height: 100px;
+    }
+  }
+}

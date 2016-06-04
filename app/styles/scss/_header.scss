@@ -1,12 +1,26 @@
 .page-header {
   display: flex;
-  align-content: space-between;
-  align-items: center;
+  justify-content: space-between;
   padding: 0 50px;
   background-color: $black;
   border-bottom: 3px solid $accent-color;
+  color: $icon-grey;
   height: 100px;
+  .nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  .nav-left {
+  }
+  .nav-right {
+    .cart {
+      margin-right: 25px;
+    }
+    .cart-total {
+      margin-right: 50px;
+    }
+  }
   img {
-    height: 50%;
+    height: 30px;
   }
 }
