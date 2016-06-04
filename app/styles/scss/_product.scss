@@ -1,4 +1,5 @@
 .page-wrap.product {
+  font-family: $primary-font;
   .product-container {
     padding: 50px;
     height: auto;
@@ -21,6 +22,9 @@
     .product-image {
       background-color: $grey;
       float: left;
+      img {
+        transform: translateY(50%);
+      }
     }
     .product-description {
       background-color: $white;
@@ -30,6 +34,16 @@
       margin-top: 50px;
       background-color: $white;
       height: 100px;
+      line-height: 100px;
+      text-align: center;
+      .bar-items {
+        display: flex;
+        height: 100%;
+        li {
+          width: 25%;
+          display: inline-block;
+        }
+      }
     }
   }
 }
