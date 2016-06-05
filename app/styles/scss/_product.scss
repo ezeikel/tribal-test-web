@@ -29,6 +29,29 @@
     .product-description {
       background-color: $white;
       float: left;
+      padding: 30px;
+      .first-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          margin-top: 0;
+          &:first-of-type {
+            text-transform: uppercase;
+
+          }
+          &:last-of-type {
+            color: $text-grey;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .title {
+        text-transform: capitalize;
+        font-weight: 300;
+        font-size: 2em;
+        margin-top: 0;
+      }
     }
     .product-bar {
       margin-top: 50px;
