@@ -5,7 +5,12 @@
   width: 200px;
   text-align: center;
   line-height: 50px;
-  background: $accent-color;
+  background-color: $accent-color;
   color: $white;
   border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($accent-color, 10%);
+  }
 }

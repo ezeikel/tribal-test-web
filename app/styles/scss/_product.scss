@@ -128,6 +128,12 @@
             margin-right: 10px;
           }
         }
+        .bar-item__favourite img {
+          margin-right: 0;
+          @media screen and (min-width: 768px) {
+            margin-right: 10px;
+          }
+        }
         .bar-item__notification {
           img {
             width: 45px;

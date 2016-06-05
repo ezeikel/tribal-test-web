@@ -1,14 +1,22 @@
 .page-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 0 50px;
   background-color: $black;
   border-bottom: 3px solid $accent-color;
   color: $icon-grey;
-  height: 100px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+  }
   .nav-left, .nav-right {
-    display: flex;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
   }
   .nav-left {
   }
@@ -36,8 +44,11 @@
 
     }
     .cart-total {
-      margin-right: 50px;
-      margin-left: 25px;
+      margin: 20px auto;
+      @media screen and (min-width: 768px) {
+        margin-right: 50px;
+        margin-left: 25px;
+      }
     }
   }
   img {
