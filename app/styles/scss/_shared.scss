@@ -20,6 +20,18 @@
   cursor: pointer;
 }
 
+.icon {
+  cursor: pointer;
+}
+
+.clear-fix {
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
 .quantity-lbl {
   position: absolute;
   top: 0px;

@@ -4,7 +4,7 @@
   @media screen and (min-width: 768px) {
     height: 100px;
   }
-  .links {
+  &__links {
     display: inline-block;
     margin: 0;
     height: 100%;
@@ -20,6 +20,7 @@
       text-transform: uppercase;
       border-bottom: solid transparent 5px;
       padding: 25px;
+      transition: all 0.3s ease-in-out;
       &:hover {
         border-bottom-color: $accent-color;
         color: $white;

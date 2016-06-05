@@ -7,53 +7,53 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <div class="page-wrap product">
+  <div class="page-wrap product-page">
     <header class="page-header">
       <nav class="navigation">
         <div class="navigation__left">
-          <img class="page-header__icon badge-icon" src="images/badge-icon.png" />
+          <img class="page-header__icon badge-icon icon" src="images/badge-icon.png" />
         </div>
         <div class="navigation__right">
           <span class="cart">
             <span class="cart__quantity-lbl quantity-lbl">3</span>
-            <img class="page-header__icon cart__icon cart-icon" src="images/cart-icon.png" />
+            <img class="page-header__icon cart__icon cart-icon icon" src="images/cart-icon.png" />
           </span>
           <p class="cart__total">£59.00</p>
           <span class="favourite">
             <span class="favourite__quantity-lbl quantity-lbl">2</span>
-            <img class="page-header__icon heart-icon" src="images/heart-icon.png" />
+            <img class="page-header__icon heart-icon icon" src="images/heart-icon.png" />
           </span>
         </div>
       </nav>
     </header>
-    <section class="product-container">
-      <div class="product-wrap">
-        <div class="product-image">
+    <section class="page-container">
+      <div class="product-wrap clear-fix">
+        <div class="product__image">
           <img class="ps4" src="images/ps4.png" />
         </div>
-        <div class="product-description">
-          <div class="first-line">
+        <div class="product__description">
+          <div class="product__description-meta">
             <p>Lorem</p>
             <p class="greyed-out">Lorem Ipsum: 4718206</p>
           </div>
-          <div>
+          <div class="product__description-title">
             <h1 class="title">Lorem ipsum</h1>
           </div>
-          <div class="basket">
-            <div class="product-price">
-              <div class="price-lbl discount">£20.99</div>
-              <div class="price-lbl">£12.99</div>
-              <div class="rrp greyed-out"><span class="bold">RRP:</span>  £27.990  (Lorem ipsum 20%)</div>
+          <div class="product__description-basket">
+            <div class="price">
+              <div class="price__lbl discount">£20.99</div>
+              <div class="price__lbl">£12.99</div>
+              <div class="price__rrp greyed-out"><span class="bold">RRP:</span>  £27.990  (Lorem ipsum 20%)</div>
             </div>
             <a class="btn">
               Add to basket
             </a>
           </div>
-          <div class="product-stock">
+          <div class="product__description-stock">
             <p><span class="uppercase bold">Lorem ipsum:</span><span class="country uppercase">UK</span><span class="underline">Change</span></p>
             <p class="greyed-out"><span class="bold">In stock.</span> More than 10 available online. Order in the next 10 mins for next day delivery.</p>
           </div>
-          <div class="product-info">
+          <div class="product__description-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <ul>
               <li>Brand: Lorem</li>
@@ -63,7 +63,7 @@
             </ul>
           </div>
           <hr/>
-          <div class="product-rating">
+          <div class="product__description-rating">
             <span class="stars"><img src="images/four-stars.png"/><img src="images/star.png"/></span>
             <span class="bold star-rating">4.5 / 5</span>
             <span class="reviews underline">112 lorem ipsum</span>
@@ -71,20 +71,20 @@
         </div>
       </div>
       <section class="product-bar">
-        <div class="bar-items">
-          <div class="bar-item__favourite">
-            <img src="images/heart-icon-black.png" />
+        <div class="product-bar__items">
+          <div class="product-bar__items-favourite">
+            <img  class="icon" src="images/heart-icon-black.png" />
             <p>lorem ipsum</p>
           </div>
-          <div class="bar-item__notification">
-            <img src="images/notification.png" />
+          <div class="product-bar__items-notification">
+            <img class="icon" src="images/notification.png" />
             <p>lorem ipsum</p>
           </div>
-          <div class="bar-item__price">
+          <div class="product-bar__items-price">
             <p>lorem ipsum</p>
             <p class="big-price">£120.00</p>
           </div>
-          <div class="bar-item__cards">
+          <div class="product-bar__items-cards">
             <p>lorem ipsum</p>
             <div class="cards-wrapper">
               <img src="images/visa.png" />
@@ -97,7 +97,7 @@
       </section>
     </section>
       <footer class="footer">
-        <ul class="links">
+        <ul class="footer__links">
           <li>lorem ipsum</li>
           <li>lorem ipsum</li>
           <li>lorem ipsum</li>
