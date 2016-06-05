@@ -9,20 +9,22 @@
 <body>
   <div class="page-wrap product">
     <header class="page-header">
-      <div class="nav-left">
-        <img class="badge" src="images/badge-icon.png" />
-      </div>
-      <div class="nav-right">
-        <span class="cart-wrapper">
-          <span class="quantity-lbl">3</span>
-          <img class="cart" src="images/cart-icon.png" />
-        </span>
-        <p class="cart-total">£59.00</p>
-        <span class="cart-wrapper">
-          <span class="quantity-lbl">2</span>
-          <img class="heart" src="images/heart-icon.png" />
-        </span>
-      </div>
+      <nav class="navigation">
+        <div class="navigation__left">
+          <img class="page-header__icon badge-icon" src="images/badge-icon.png" />
+        </div>
+        <div class="navigation__right">
+          <span class="cart">
+            <span class="cart__quantity-lbl quantity-lbl">3</span>
+            <img class="page-header__icon cart__icon cart-icon" src="images/cart-icon.png" />
+          </span>
+          <p class="cart__total">£59.00</p>
+          <span class="favourite">
+            <span class="favourite__quantity-lbl quantity-lbl">2</span>
+            <img class="page-header__icon heart-icon" src="images/heart-icon.png" />
+          </span>
+        </div>
+      </nav>
     </header>
     <section class="product-container">
       <div class="product-wrap">
