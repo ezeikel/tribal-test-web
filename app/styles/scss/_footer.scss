@@ -1,26 +1,36 @@
 .footer {
   margin-top: 50px;
   background-color: $black;
-  height: 100px;
   //padding: 0 50px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    height: 100px;
+  }
   .links {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: inline-block;
     margin: 0;
     height: 100%;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+    }
     li {
       color: #888;
-      //display: inline-block;
-      width: 20%;
-      line-height: 100px;
       text-align: center;
       text-transform: uppercase;
       border-bottom: solid transparent 5px;
+      padding: 25px;
       &:hover {
         border-bottom-color: $accent-color;
         color: $white;
         cursor: pointer;
+      }
+      @media screen and (min-width: 768px) {
+        width: 20%;
+        line-height: 100px;
+        padding: 0;
       }
     }
   }

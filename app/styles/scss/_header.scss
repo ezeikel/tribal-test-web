@@ -42,5 +42,8 @@
   }
   img {
     height: 30px;
+    &.badge {
+      height: 40px;
+    }
   }
 }

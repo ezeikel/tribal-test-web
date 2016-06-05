@@ -16,14 +16,19 @@
         }
       }
     .product-image, .product-description {
-      width: 50%;
-      height: 640px;
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: 50%;
+        height: 640px;
+      }
     }
     .product-image {
       background-color: $grey;
       float: left;
       img {
-        transform: translateY(50%);
+        @media screen and (min-width: 768px) {
+          transform: translateY(50%);
+        }
       }
     }
     .product-description {
@@ -49,16 +54,13 @@
         display: flex;
         justify-content: space-between;
         .product-price {
-          //display: flex;
         }
         .price-lbl {
-          //float: left;
           display: inline-block;
           font-size: 1.8em;
           font-weight: 300;
-          //margin-bottom: 10px;
-          + .price-lbl {
-            margin-left: 10px;
+          &:first-of-type {
+            margin-right: 10px;
           }
         }
         .rrp {
@@ -95,24 +97,40 @@
     .product-bar {
       margin-top: 50px;
       background-color: $white;
-      height: 100px;
-      line-height: 100px;
-      text-align: center;
+      @media screen and (min-width: 768px) {
+        //height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
       .bar-items {
-        display: flex;
-        height: 100%;
+        display: block;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+          display: flex;
+          height: 100%;
+          padding: 20px;
+        }
         p {
           margin: 0;
         }
         div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 25%;
           text-transform: capitalize;
+          padding: 20px;
+          @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            padding: 0;
+          }
           img {
             width: 35px;
             margin-right: 10px;
+          }
+        }
+        .bar-item__notification {
+          img {
+            width: 45px;
           }
         }
         .bar-item__price {
@@ -131,14 +149,25 @@
           flex-direction: column;
           line-height: initial;
           p {
-            text-align: left;
+            text-align: center;;
             width: 100%;
             margin-bottom: 10px;
+            @media screen and (min-width: 768px) {
+              text-align: left;
+            }
           }
           .cards-wrapper {
-            width: 100%;
+            display: flex;
+            align-items: flex-start;
             img {
               width: 25%;
+              margin-right: 0;
+              &+ img {
+                margin-left: 10px;
+              }
+            }
+            @media screen and (min-width: 768px) {
+              width: 100%;
             }
           }
         }
