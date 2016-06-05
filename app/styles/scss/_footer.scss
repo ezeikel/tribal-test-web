@@ -19,6 +19,7 @@
       border-bottom: solid transparent 5px;
       &:hover {
         border-bottom-color: $accent-color;
+        color: $white;
       }
     }
   }

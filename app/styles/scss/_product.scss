@@ -39,9 +39,46 @@
       .bar-items {
         display: flex;
         height: 100%;
-        li {
+        p {
+          margin: 0;
+        }
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 25%;
-          display: inline-block;
+          text-transform: capitalize;
+          img {
+            width: 35px;
+            margin-right: 10px;
+          }
+        }
+        .bar-item__price {
+          flex-direction: column;
+          line-height: initial;
+          p {
+            margin-bottom: 10px;
+          }
+          .big-price {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+        .bar-item__cards {
+          flex-direction: column;
+          line-height: initial;
+          p {
+            text-align: left;
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          .cards-wrapper {
+            width: 100%;
+            img {
+              width: 25%;
+            }
+          }
         }
       }
     }
