@@ -62,6 +62,9 @@
           &:first-of-type {
             margin-right: 10px;
           }
+          &.discount {
+            font-weight: 400;
+          }
         }
         .rrp {
           width: 100%;
