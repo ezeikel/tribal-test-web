@@ -41,9 +41,28 @@
 
           }
           &:last-of-type {
-            color: $text-grey;
             text-transform: capitalize;
           }
+        }
+      }
+      .basket {
+        display: flex;
+        justify-content: space-between;
+        .product-price {
+          //display: flex;
+        }
+        .price-lbl {
+          //float: left;
+          display: inline-block;
+          font-size: 1.8em;
+          font-weight: 300;
+          margin-bottom: 10px;
+          + .price-lbl {
+            margin-left: 10px;
+          }
+        }
+        .rrp {
+          width: 100%;
         }
       }
       .title {
