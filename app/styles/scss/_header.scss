@@ -13,11 +13,31 @@
   .nav-left {
   }
   .nav-right {
-    .cart {
-      margin-right: 25px;
+    .cart-wrapper {
+      position: relative;
+      .cart {
+        //margin-right: 25px;
+      }
+      .quantity-lbl {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        z-index: 3;
+        height: 25px;
+        width: 25px;
+        background-color: $accent-color;
+        border-radius: 50%;
+        color: $white;
+        line-height: 25px;
+        text-align: center;
+        font-size: 0.775em;
+        transform: translate(50%, -50%);
+      }
+
     }
     .cart-total {
       margin-right: 50px;
+      margin-left: 25px;
     }
   }
   img {
