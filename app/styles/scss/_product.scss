@@ -56,13 +56,33 @@
           display: inline-block;
           font-size: 1.8em;
           font-weight: 300;
-          margin-bottom: 10px;
+          //margin-bottom: 10px;
           + .price-lbl {
             margin-left: 10px;
           }
         }
         .rrp {
           width: 100%;
+        }
+      }
+      .product-stock {
+        margin-top: 50px;
+        .country {
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
+      .product-info {
+        ul {
+          list-style: initial;
+          padding-left: 20px;
+        }
+      }
+      .product-rating {
+        margin-top: 20px;
+        .star-rating {
+          margin-left: 10px;
+          margin-right: 10px;
         }
       }
       .title {
@@ -99,7 +119,7 @@
           flex-direction: column;
           line-height: initial;
           p {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
           }
           .big-price {
             margin-top: 0;
