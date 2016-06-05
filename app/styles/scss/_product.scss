@@ -108,7 +108,7 @@
         p {
           margin: 0;
         }
-        div {
+        .product-bar__item {
           text-transform: capitalize;
           padding: 20px;
           @media screen and (min-width: 768px) {

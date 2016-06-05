@@ -16,12 +16,12 @@
         <div class="navigation__right">
           <span class="cart">
             <span class="cart__quantity-lbl quantity-lbl">3</span>
-            <img class="page-header__icon cart__icon cart-icon icon" src="images/cart-icon.png" />
+            <img class="page-header__icon cart__icon cart-icon icon" id="view-cart-btn" src="images/cart-icon.png" />
           </span>
           <p class="cart__total">£59.00</p>
           <span class="favourite">
             <span class="favourite__quantity-lbl quantity-lbl">2</span>
-            <img class="page-header__icon heart-icon icon" src="images/heart-icon.png" />
+            <img class="page-header__icon heart-icon icon" id="view-favourites-btn" src="images/heart-icon.png" />
           </span>
         </div>
       </nav>
@@ -45,7 +45,7 @@
               <div class="price__lbl">£12.99</div>
               <div class="price__rrp greyed-out"><span class="bold">RRP:</span>  £27.990  (Lorem ipsum 20%)</div>
             </div>
-            <a class="btn">
+            <a class="btn" id="add-cart-btn">
               Add to basket
             </a>
           </div>
@@ -72,19 +72,19 @@
       </div>
       <section class="product-bar">
         <div class="product-bar__items">
-          <div class="product-bar__items-favourite">
-            <img  class="icon" src="images/heart-icon-black.png" />
+          <div class="product-bar__items-favourite product-bar__item">
+            <img  class="icon" id="add-favourite-btn" src="images/heart-icon-black.png" />
             <p>lorem ipsum</p>
           </div>
-          <div class="product-bar__items-notification">
-            <img class="icon" src="images/notification.png" />
+          <div class="product-bar__items-notification product-bar__item">
+            <img class="icon" id="add-notification-btn"  src="images/notification.png" />
             <p>lorem ipsum</p>
           </div>
-          <div class="product-bar__items-price">
+          <div class="product-bar__items-price product-bar__item">
             <p>lorem ipsum</p>
             <p class="big-price">£120.00</p>
           </div>
-          <div class="product-bar__items-cards">
+          <div class="product-bar__items-cards product-bar__item">
             <p>lorem ipsum</p>
             <div class="cards-wrapper">
               <img src="images/visa.png" />
