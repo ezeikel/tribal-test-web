@@ -22,6 +22,7 @@
     .navigation__right {
       .cart, .favourite {
         position: relative;
+        display: inline-block;
       }
       .cart__total {
         margin: 20px auto;
