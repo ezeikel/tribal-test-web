@@ -18,7 +18,13 @@
     .product__image {
       background-color: $grey;
       float: left;
+      overflow: hidden;
       img {
+        transition: transform 0.8s ease-in-out;
+        &:hover {
+          cursor: crosshair;
+          transform: scale(1.5);
+        }
         @media screen and (min-width: 768px) {
           transform: translateY(50%);
         }

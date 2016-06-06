@@ -29,6 +29,7 @@
         @media screen and (min-width: 768px) {
           margin-right: 50px;
           margin-left: 25px;
+          width: 70px;
         }
       }
     }
@@ -38,5 +39,26 @@
         height: 35px;
       }
     }
+  }
+}
+
+.quantity-lbl {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 3;
+  height: 25px;
+  width: 25px;
+  background-color: $accent-color;
+  border-radius: 50%;
+  color: $white;
+  line-height: 25px;
+  text-align: center;
+  font-size: 0.775em;
+  transform: translate(50%, -50%);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  &.hide {
+    opacity: 0;
   }
 }

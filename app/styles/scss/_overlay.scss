@@ -1,0 +1,51 @@
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: $white;
+  z-index: 20;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  &.show {
+    transform: translateY(0);
+    overflow: scroll;
+  }
+  .close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-size: 1.675em;
+    color: $black;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h1 {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .cart-items, .favourite-items {
+    list-style-type: initial;
+    text-align: center;
+    font-size: 1.2em;
+    .cart-item, .favourite-item {
+      margin-bottom: 20px;
+      .remove {
+        background-color: $red;
+        color: $white;
+        padding: 5px;
+        margin-left: 10px;
+        &:hover {
+          cursor: pointer;
+          background-color: lighten($red, 10%);
+        }
+      }
+    }
+  }
+}
