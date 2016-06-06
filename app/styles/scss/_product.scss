@@ -46,6 +46,7 @@
           }
           &:last-of-type {
             text-transform: capitalize;
+            text-align: right;
           }
         }
       }
@@ -129,6 +130,12 @@
             margin-right: 10px;
           }
         }
+        .icon {
+          transition: transform 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
         &-favourite img[class=icon] {
           margin-right: 0;
           @media screen and (min-width: 768px) {
@@ -170,6 +177,9 @@
             img {
               width: 25%;
               margin-right: 0;
+              @media screen and (min-width: 768px) {
+                width: 20%;
+              }
               &+ img {
                 margin-left: 10px;
               }

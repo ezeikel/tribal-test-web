@@ -1,5 +1,5 @@
 .overlay {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   background-color: $white;
@@ -24,7 +24,7 @@
       cursor: pointer;
     }
   }
-  h1 {
+  .overlay-title {
     font-size: 3em;
     font-weight: 400;
     text-align: center;

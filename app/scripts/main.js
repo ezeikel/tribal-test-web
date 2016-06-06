@@ -20,7 +20,6 @@
 
     var itemPrice = parseFloat($itemPrice.text());
 
-    // Save values to sessionStorage
     if (sessionStorage.length === 0) {
       sessionStorage.setItem("cartTotal", 0);
       sessionStorage.setItem("noOfCartItems", 0);
@@ -45,6 +44,13 @@
       } else {
         $favouritesQty.addClass("hide");
       }
+    }
+
+    function updateCartTotal (cTotal) {
+      cartTotal = Math.round(cTotal * 100) / 100;
+      if (cartTotal < 0) cartTotal = 0;
+      $cartTotal.text(cartTotal);
+      sessionStorage.setItem("cartTotal", cartTotal);
     }
 
     isCartEmpty();
@@ -76,9 +82,8 @@
       sessionStorage.setItem("noOfCartItems", noOfCartItems);
 
       cartTotal = cartTotal + itemPrice;
-      cartTotal = Math.round(cartTotal * 100) / 100;
-      $cartTotal.text(cartTotal);
-      sessionStorage.setItem("cartTotal", cartTotal);
+      //cartTotal = Math.round(cartTotal * 100) / 100;
+      updateCartTotal(cartTotal);
 
     });
 
@@ -112,11 +117,8 @@
       isCartEmpty();
       $cartQty.text(noOfCartItems);
       sessionStorage.setItem("noOfCartItems", noOfCartItems);
-
       cartTotal = cartTotal - itemPrice;
-      cartTotal = Math.round(cartTotal * 100) / 100;
-      $cartTotal.text(cartTotal);
-      sessionStorage.setItem("cartTotal", cartTotal);
+      updateCartTotal(cartTotal);
     });
 
   });
