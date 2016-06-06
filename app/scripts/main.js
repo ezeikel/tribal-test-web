@@ -82,7 +82,6 @@
       sessionStorage.setItem("noOfCartItems", noOfCartItems);
 
       cartTotal = cartTotal + itemPrice;
-      //cartTotal = Math.round(cartTotal * 100) / 100;
       updateCartTotal(cartTotal);
 
     });
